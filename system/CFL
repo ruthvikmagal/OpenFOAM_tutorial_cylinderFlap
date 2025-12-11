@@ -1,0 +1,12 @@
+Courant
+{
+    type        CourantNo;
+    libs        (fieldFunctionObjects);
+    rho         rhoInf;
+    rhoInf	1.293;
+    executeControl  timeStep;
+    executeInterval 1;
+    writeControl    timeStep;
+    writeInterval   1;
+
+}

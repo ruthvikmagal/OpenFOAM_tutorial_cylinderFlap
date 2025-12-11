@@ -18,7 +18,7 @@ stopAt              endTime;
 
 endTime             5;
 
-deltaT              0.025;
+deltaT              0.0005;
 
 writeControl        timeStep;
 
@@ -40,5 +40,6 @@ runTimeModifiable true;
 
 functions
 {
-
+    #include "yPlus"
+    #include "CFL"
 }

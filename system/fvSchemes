@@ -23,6 +23,11 @@ FoamFile
         default         none;
     	div(phi,U)      bounded Gauss linearUpwind limited;
         div((nuEff*dev2(T(grad(U))))) Gauss linear;
+	turbulence      bounded Gauss upwind;
+    	div(phi,k)      $turbulence;
+    	div(phi,omega)  $turbulence;
+
+
     }
 
     interpolationSchemes
